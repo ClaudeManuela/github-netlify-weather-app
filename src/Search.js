@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./App";
 
-export default function () {
+export default function Search() {
   let [city, setCity] = useState("");
   let [weather, setWeather] = useState("");
   let [loaded, setLoaded] = useState(false);
