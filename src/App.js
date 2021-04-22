@@ -1,6 +1,6 @@
 import "./App.css";
 import Search from "./Search";
-import Attribution from "./Attribution"
+import Attribution from "./Attribution";
 
 export default function App() {
   return (

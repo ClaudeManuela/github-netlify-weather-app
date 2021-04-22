@@ -35,7 +35,7 @@ export default function () {
         placeholder="Enter a city..."
         onChange={changeCity}
       />
-      <input type="Submit" value="Search" />
+      <input className="search"type="Submit" value="Search" />
     </form>
   );
 
@@ -44,11 +44,11 @@ export default function () {
       <div>
         {form}
         <ul>
-          <li>Temperature: {Math.round(weather.temperature)}°C</li>
-          <li>Description: {weather.description}</li>
+          <li className="temperature">{Math.round(weather.temperature)}°C</li>
+          <li>{weather.description}</li>
           <li>Humidity: {weather.humidity}%</li>
           <li>Wind: {weather.wind}km/h</li>
-          <li>
+          <li className="icon">
             <img src={weather.icon} alt={weather.description} />
           </li>
         </ul>
